@@ -79,6 +79,9 @@ var CollegeListView = function() {
                         if (u) {
                             that.set_active(u);
                         }
+                        if ($('#data-edit-user:visible') && !$('li.' + u).length) {
+                            ev.hide();
+                        }
                     }
                 });
             });
